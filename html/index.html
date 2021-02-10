@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STOPWATCH</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stopwatch">
+        <h1>STOPWATCH</h1>
+        <table width="70%">
+          <tr id="row_1">
+            <th id="hours">00</th>
+            <th id="minutes">00</th>
+            <th id="seconds">00</th>
+            <th id="cSeconds">00</th>
+          </tr>
+          <tr id="row_2">
+            <th>Hours</th>
+            <th>Minutes</th>
+            <th>Seconds</th>
+            <th>C-Seconds</th>
+          </tr>
+        </table>
+        <div class="btn">
+          <button type="button" id="resumeButton">RESUME</button>
+          <button type="button" id="startButton">START</button>
+          <button type="button" id="restartButton">RESTART</button>
+          <button type="button" id="pauseButton">PAUSE</button>
+          <button type="button" id="stopButton">STOP</button>
+          <button type="button" id="resetButton">RESET</button>
+        </div>
+        <div class="para">
+          <h2 id="peraText"></h2>
+        </div>
+        <div class="text">
+          <h3 id="logText">ENTER TIME & HIT START..!</h3>
+        </div>
+        <div class="userLogs"></div>
+      </div>
+    </div>
+  </body>
+</html>

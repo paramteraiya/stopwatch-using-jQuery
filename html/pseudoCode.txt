@@ -1,0 +1,44 @@
+/*pseudo code for STOPWATCH*/
+
+Declaring mySecond variable (Referance variable to change respective values of minutes and hours)
+Declaring intervalHandler variable 
+Declaring cSeconds variable to zero
+
+/*Function to set variables in DOM*/
+function timerFunction:
+    Initializing mySec to (mySeconds modulo 60)
+    Initializing myMinutes to ((mySeconds / 60)modulo 60)
+    Initializing myHours to (mySeconds/60*60)
+    appending updated values in HTML
+    if cSeconds is zero:
+        print breakpoint to consol
+        setting cSeconds to 99
+        increasing mySeconds by 1
+    else:
+        decreasing cSeconds by 1
+
+/*START COUNTER function*/
+function startCounter :
+    setting mySeconds to zero
+    Initializing intervalHandler to default setInterval with valid arguments (Input, 10)
+
+/*PAUSE function*/
+Declaring pause fucntion:
+    showing resume button from HTML
+    hiding start button from HTML
+    using default function clearInterval to pause intervalHandler
+
+/*RESUME function*/
+function resume:
+    setting intervalHandler again
+
+/*RESET function*/
+function reset :
+    appending values to zero in HTML
+    clearing intervalHandler
+    setting mySecond to zero
+
+/*RESTART function*/
+fucntion restat:
+    clearing intervalHandler
+    calling startCounter function
